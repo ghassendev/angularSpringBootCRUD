@@ -1,0 +1,26 @@
+<div class="container">
+    <div>
+    <h2>Modifier un Arbre :</h2>
+    </div>
+    <form >
+    <div  class="col-sm-2 col-md-2 col-lg-2">
+    <label >ID Arbre</label>
+    <input readonly type="text" [(ngModel)]="currentArbre.idArbre" name="idArbre" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+    <label >Nom Arbre</label>
+    <input type="text"[(ngModel)]= "currentArbre.nomArbre" name="nomArbre" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+    <label >Prix Arbre</label>
+    <input type="number" [(ngModel)]= "currentArbre.prixArbre" name="prixArbre" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+    <label >Date création</label>
+    <input type="date" [ngModel]="currentArbre.dateCreation| date: 'yyyy-MM-dd'" (ngModelChange)=" currentArbre.dateCreation= $event" name="dateCreation" class="form-control">
+</div>
+<div class="mt-2">
+<button type="submit" (click)="updateArbre()" class="btn btn-success">Modifer</button>
+</div>
+</form>
+</div>
