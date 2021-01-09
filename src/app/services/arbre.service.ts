@@ -35,26 +35,26 @@ export class ArbreService {
       const url = `${this.apiURL}/${id}`;
       return this.http.delete(url, httpOptions);
     }
-    consulterArbre(id: number): Observable<Arbre> {
-      const url = `${this.apiURL}/${id}`;
-      return this.http.get<Arbre>(url);
-      }
-      trierArbres(){
-        this.arbres = this.arbres.sort((n1,n2) => {
-        if (n1.idArbre > n2.idArbre) {
-        return 1;
-        }
-        if (n1.idArbre < n2.idArbre) {
-        return -1;
-        }
-        return 0;
-        });
-        }
-        
+  consulterArbre(id: number): Observable<Arbre> {
+    const url = `${this.apiURL}/${id}`;
+    return this.http.get<Arbre>(url);
+    }
+  trierArbres(){
+    this.arbres = this.arbres.sort((n1,n2) => {
+    if (n1.idArbre > n2.idArbre) {
+    return 1;
+    }
+    if (n1.idArbre < n2.idArbre) {
+    return -1;
+    }
+    return 0;
+    });
+    }
+    
 
 
-        updateArbre(arb :Arbre) : Observable<Arbre>
-        {
-        return this.http.put<Arbre>(this.apiURL, arb, httpOptions);
-        }
+    updateArbre(arb :Arbre) : Observable<Arbre>
+    {
+    return this.http.put<Arbre>(this.apiURL, arb, httpOptions);
+    }
 }

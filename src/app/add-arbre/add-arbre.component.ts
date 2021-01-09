@@ -21,7 +21,8 @@ export class AddArbreComponent implements OnInit {
   addArbre(){
     this.arbreService.ajouterArbre(this.newArbre)
     .subscribe(arbs => {
-    console.log(arbs);
+    //console.log(arbs);
+    //console.log(this.newArbre)
     });
     this.router.navigate(['arbres']);
     }
