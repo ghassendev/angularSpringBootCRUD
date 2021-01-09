@@ -8,18 +8,18 @@ Liste:
 
 Before add
 
-![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/add vide.PNG)
+![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/addvide.PNG)
 
 After add
 
-![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/after add.PNG)
+![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/afteradd.PNG)
 
 
 
 Before Delete 
 
-![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/before delete.PNG)
+![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/beforedelete.PNG)
 
 After Delete 
 
-![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/after delete.PNG)
+![alt text](https://github.com/ghassendev/angularSpringBootCRUD/blob/master/img/afterdelete.PNG)
